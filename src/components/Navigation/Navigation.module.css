@@ -1,7 +1,4 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     background: rgb(174, 209, 238);
     background: radial-gradient(circle, rgba(174, 209, 238, 1) 0%, rgba(175, 223, 195, 0.38139005602240894) 54%, rgba(163, 217, 176, 0.5578606442577031) 100%, rgba(164, 233, 148, 0.5270483193277311) 100%);
@@ -10,20 +7,13 @@
 }
 
 .nav {
-    margin: 0, 15px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 70px;
 }
 
-/* .navWrapnavWrap {
-    margin: 0, 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-} */
 
 .link {
     text-decoration: none;
@@ -33,7 +23,7 @@
     color: #356076;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3.5px;
+    letter-spacing: 2.5px;
     transition: all 0.5s ease-out;
 
 }

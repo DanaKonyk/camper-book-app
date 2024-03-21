@@ -14,7 +14,7 @@ export const Navigation = () => {
             </svg>
           </NavLink>
         </div>
-        <div className={css.navWrap}>
+        <div>
           <NavLink to="/" className={css.link}>
             Home
           </NavLink>

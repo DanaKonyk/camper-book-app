@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Home.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
         way to connect to others. Go and book the best van for the vacation of
         your dream.
       </p>
+      <Link className={css.link} to={'/catalog'}>
+        Go to catalog
+      </Link>
     </div>
   );
 }
