@@ -1,13 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import css from './Navigation.module.css';
+import sprite from '../../images/sprite.svg';
 
 export const Navigation = () => {
   return (
-    <header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/catalog">Catalog</Link>
-        <Link to="/favorites">Favorites</Link>
+    <header className={css.header}>
+      <nav className={css.nav}>
+        <div>
+          <NavLink to="/" className={css.iconlink}>
+            <svg className={css.iconHelp} width="40" height="40">
+              <use href={`${sprite}#icon-van1`} />
+            </svg>
+          </NavLink>
+        </div>
+        <div className={css.navWrap}>
+          <NavLink to="/" className={css.link}>
+            Home
+          </NavLink>
+          <NavLink to="/catalog" className={css.link}>
+            Catalog
+          </NavLink>
+          <NavLink to="/favorites" className={css.link}>
+            Favorites
+          </NavLink>
+        </div>
       </nav>
     </header>
   );
