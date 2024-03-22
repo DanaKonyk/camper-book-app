@@ -5,6 +5,7 @@ import { Navigation } from 'components/Navigation/Navigation';
 import { getAdverts } from '../../redux/adverts/selectors';
 import { fetchAdverts } from '../../redux/adverts/operations';
 import Card from 'components/Card/Card';
+import css from './Catalog.module.css';
 
 export default function Catalog() {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ export default function Catalog() {
   return (
     <>
       <Navigation />
-      <ul>
+      <ul className={css.list}>
         {adverts.length > 0 &&
           adverts.map(advert => <Card key={advert._id} card={advert} />)}
       </ul>
