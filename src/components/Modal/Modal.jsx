@@ -62,7 +62,7 @@ const Modal = ({ onClose, advert }) => {
           </div>
           <div className={css.additionalContent}>
             <div className={css.nav}>
-              <Features></Features>
+              <Features card={advert}></Features>
               <Reviews></Reviews>
               <Form></Form>
             </div>
