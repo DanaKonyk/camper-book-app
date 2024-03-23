@@ -56,8 +56,8 @@ const Modal = ({ onClose, advert }) => {
             </ul>
             <p className={css.desc}>{advert.description}</p>
           </div>
-          <div className={css.subContent}>
-            <div className={css.modalNav}>
+          <div className={css.additionalContent}>
+            <div className={css.nav}>
               <Features></Features>
               <Reviews></Reviews>
               <Form></Form>
