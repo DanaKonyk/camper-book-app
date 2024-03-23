@@ -23,13 +23,11 @@ const CardList = () => {
         {adverts.length > 0 &&
           adverts.map(advert => <Card key={advert._id} card={advert} />)}
       </ul>
-      <button
-        className={css.buttonMore}
-        onClick={() => handleMore()}
-        type="button"
-      >
-        Load more
-      </button>
+      {adverts.length <= 12 && (
+        <button className={css.buttonMore} onClick={handleMore} type="button">
+          Load more
+        </button>
+      )}
     </div>
   );
 };

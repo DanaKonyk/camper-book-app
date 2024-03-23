@@ -53,7 +53,7 @@ const Filtersbar = () => {
                       name="equipment"
                       value={vehicle.value}
                     />
-                    <div className={(css.iconWrap, css.iconFill)}>
+                    <div className={css.iconFill}>
                       <svg width="32" height="32" className={css.icon}>
                         <use href={`${sprite}#${vehicle.src}`} />
                       </svg>

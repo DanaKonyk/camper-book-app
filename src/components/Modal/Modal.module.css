@@ -1,0 +1,39 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 1200;
+}
+
+.modalBody {
+    display: flex;
+    justify-content: center;
+}
+
+.modalContentWrap {
+    width: 982px;
+    background-color: var(--second-color);
+    padding: 30px;
+    border-radius: 20px;
+    overflow-y: auto;
+    height: 90vh;
+}
+
+.button {
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    background-color: transparent;
+    padding: 0;
+}
+
+.buttonIcon {
+    stroke: black;
+}

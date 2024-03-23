@@ -7,7 +7,7 @@ export const equipList = [
 ];
 
 export const vehicleList = [
-  { name: 'Van', value: 'van', src: 'icon-van1' },
-  { name: 'Fully Intergrated', value: 'fully', src: 'icon-van2' },
-  { name: 'Alcove', value: 'alcove', src: 'icon-van3' },
+  { id: 1, name: 'Van', value: 'van', src: 'icon-van1' },
+  { id: 2, name: 'Fully Intergrated', value: 'fully', src: 'icon-van2' },
+  { id: 3, name: 'Alcove', value: 'alcove', src: 'icon-van3' },
 ];
