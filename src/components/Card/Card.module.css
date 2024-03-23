@@ -92,3 +92,42 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.detailsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.detailsItem {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 100px;
+    background: var(--description-card-color);
+}
+
+.iconTransmission,
+.iconKitchen,
+.iconBedroom {
+    stroke: var(--main-text-color);
+    fill: transparent;
+
+}
+
+.buttonMore {
+    padding: 16px 40px;
+    border-radius: 200px;
+    background: var(--button-color);
+    color: var(--second-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.08px;
+    transition: background-color var(--button-hover-color);
+}
+
+.buttonMore:hover {
+    background-color: var(--button-hover-color);
+}

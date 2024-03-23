@@ -42,42 +42,42 @@ const Card = ({ card }) => {
         </div>
         <p className={css.description}>{card.description}</p>
         <ul className={css.detailsList}>
-          <li>
+          <li className={css.detailsItem}>
             <svg className={css.iconAdults} width="20" height="20">
               <use href={`${sprite}#icon-adults`} />
             </svg>
             <p className={css.adults}>{card.adults} adults</p>
           </li>
-          <li>
+          <li className={css.detailsItem}>
             <svg className={css.iconTransmission} width="20" height="20">
               <use href={`${sprite}#icon-transmission`} />
             </svg>
             <p className={css.adults}>{card.transmission} </p>
           </li>
-          <li>
+          <li className={css.detailsItem}>
             <svg className={css.iconPetrol} width="20" height="20">
               <use href={`${sprite}#icon-petrol`} />
             </svg>
             <p className={css.adults}>{card.engine} </p>
           </li>
-          {card.details.kitchen >= 1 && (
-            <li>
+          {card.kitchen && (
+            <li className={css.detailsItem}>
               <svg className={css.iconKitchen} width="20" height="20">
                 <use href={`${sprite}#icon-kitchen`} />
               </svg>
               <p className={css.adults}>Kitchen</p>
             </li>
           )}
-          <li>
+          <li className={css.detailsItem}>
             <svg className={css.iconBedroom} width="20" height="20">
               <use href={`${sprite}#icon-bedroom`} />
             </svg>
-            <p className={css.adults}>{card.details.beds} beds</p>
+            <p className={css.adults}>{card.beds} beds</p>
           </li>
-          {card.details.airConditioner >= 1 && (
-            <li>
+          {card.airConditioner && (
+            <li className={css.detailsItem}>
               <svg className={css.iconWind} width="20" height="20">
-                <use href={`${sprite}#icon-water`} />
+                <use href={`${sprite}#icon-ac`} />
               </svg>
               <p className={css.adults}>AC</p>
             </li>

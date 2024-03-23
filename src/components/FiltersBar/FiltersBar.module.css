@@ -1,0 +1,132 @@
+.mainWrap {
+    width: 440px;
+    height: 880px;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+
+.locationWrap {
+    font-size: 16px;
+    color: rgba(16, 24, 40, 0.6);
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.input {
+    background-color: var(--input-color);
+    border: none;
+    width: 360px;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: rgb(79, 79, 79);
+    margin-bottom: 10px;
+}
+
+.filtersForm {
+    border: none;
+    margin-top: 30px;
+}
+
+.filtersName {
+    width: 100%;
+    border-bottom: 1px solid #1018281A;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.equipWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.checkboxWrap {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkboxWrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+
+.iconWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 112px;
+    height: 95px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 20px;
+    fill: transparent;
+    stroke: black;
+}
+
+.iconFill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 112px;
+    height: 95px;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 20px;
+    fill: black;
+    stroke: black;
+}
+
+.descrip {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--main-text-color);
+    width: 80px;
+}
+
+
+.button {
+    width: 173px;
+    height: 50px;
+    color: var(--second-color);
+    background-color: var(--button-color);
+    padding: 10px 20px;
+    border-radius: 200px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 200ms linear;
+}
+
+.button:hover,
+.button:active {
+    background-color: var(--button-hover-color);
+}
