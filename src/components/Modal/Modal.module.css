@@ -37,3 +37,68 @@
 .buttonIcon {
     stroke: black;
 }
+
+.reviewsLocationWrap {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.rate,
+.location {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--main-text-color);
+    text-decoration: underline;
+}
+
+.location {
+    text-decoration: none;
+}
+
+.iconPin {
+    fill: transparent;
+    stroke: var(--main-text-color);
+}
+
+.price {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--main-text-color);
+}
+
+.imgList {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.img {
+    width: 290px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.desc {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 44px;
+}
+
+.nav {
+    display: flex;
+    border-bottom: 1px solid #10182833;
+    gap: 20px;
+    margin-top: 10px;
+}

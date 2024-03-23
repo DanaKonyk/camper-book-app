@@ -40,7 +40,7 @@ const Card = ({ card }) => {
                 <use href={`${sprite}#icon-star`} />
               </svg>
               <button className={css.buttonRate} type="button">
-                {`${card.rating}(${card.reviews.length} Reviews)`}
+                {`${card.rating} (${card.reviews.length} Reviews)`}
               </button>
             </div>
             <div className={css.locationWrap}>

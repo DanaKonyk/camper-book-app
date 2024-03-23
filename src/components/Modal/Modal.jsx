@@ -29,27 +29,31 @@ const Modal = ({ onClose, advert }) => {
           <div className={css.contentWrap}>
             <div className={css.advertContentWrap}>
               <h2 className={css.title}>{advert.name}</h2>
-              <div className={css.reviewsPriceWrap}>
-                <svg className={css.iconStar} width="16" height="16">
-                  <use href={`${sprite}#icon-star`} />
-                </svg>
-                <button className={css.buttonRate} type="button">
-                  {`${advert.rating}(${advert.reviews.length} Reviews)`}
-                </button>
-                <svg className={css.iconPin} width="16" height="16">
-                  <use href={`${sprite}#icon-pin`} />
-                </svg>
+              <div className={css.reviewsLocationWrap}>
+                <p className={css.rate}>
+                  <svg className={css.iconStar} width="16" height="16">
+                    <use href={`${sprite}#icon-star`} />
+                  </svg>
+                  {`${advert.rating} (${advert.reviews.length} Reviews)`}
+                </p>
                 <p className={css.location}>
+                  <svg className={css.iconPin} width="16" height="16">
+                    <use href={`${sprite}#icon-pin`} />
+                  </svg>
                   {advert.location.split(',').reverse().join(', ')}
                 </p>
               </div>
               <p className={css.price}>€{advert.price}.00</p>
             </div>
             <ul className={css.imgList}>
-              {advert.gallery.map(image => {
+              {advert.gallery.map((image, i) => {
                 return (
-                  <li>
-                    <img className={css.img} src={image} alt="van"></img>
+                  <li key={`${advert._id}/${i}`}>
+                    <img
+                      className={css.img}
+                      src={image}
+                      alt={advert.name}
+                    ></img>
                   </li>
                 );
               })}
