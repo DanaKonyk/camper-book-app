@@ -135,3 +135,34 @@
     padding: 10px 15px;
     border-radius: 200px;
 }
+
+.vehicleTitle {
+    margin-top: 44px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--main-text-color);
+    margin-bottom: 32px;
+}
+
+hr {
+    background-color: var(--description-card-color);
+    margin-bottom: 20px;
+}
+
+.vehicleList {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.vehicleItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: var(--main-text-color);
+}

@@ -3,7 +3,12 @@ import { fetchAdverts } from './operations';
 
 const advertsSlice = createSlice({
   name: 'adverts',
-  initialState: { adverts: [], isLoading: false, error: null },
+  initialState: {
+    adverts: [],
+    totalAdverts: 13,
+    isLoading: false,
+    error: null,
+  },
   extraReducers: builder => {
     builder
       .addCase(fetchAdverts.pending, state => {
@@ -12,7 +17,7 @@ const advertsSlice = createSlice({
       .addCase(fetchAdverts.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.adverts = action.payload;
+        state.adverts = [...state.adverts, ...action.payload];
       })
       .addCase(fetchAdverts.rejected, (state, action) => {
         state.isLoading = false;

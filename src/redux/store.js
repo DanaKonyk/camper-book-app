@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import {
   persistStore,
-  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -9,19 +8,13 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+// import storage from 'redux-persist/lib/storage';
 
 import { advertsReducer } from './adverts/advertsSlice';
 
-const advertsPersistConfig = {
-  key: 'adverts',
-  storage,
-  whitelist: ['adverts'],
-};
-
 export const store = configureStore({
   reducer: {
-    adverts: persistReducer(advertsPersistConfig, advertsReducer),
+    adverts: advertsReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

@@ -79,6 +79,34 @@ const Features = ({ card }) => {
           </li>
         )}
       </ul>
+      <h3 className={css.vehicleTitle}>Vehicle Details</h3>
+      <hr />
+      <ul className={css.vehicleList}>
+        <li className={css.vehicleItem}>
+          <p>Form</p>
+          <p>{card.form}</p>
+        </li>
+        <li className={css.vehicleItem}>
+          <p>Length</p>
+          <p>{card.length}</p>
+        </li>
+        <li className={css.vehicleItem}>
+          <p>Width</p>
+          <p>{card.width}</p>
+        </li>
+        <li className={css.vehicleItem}>
+          <p>Height</p>
+          <p>{card.height}</p>
+        </li>
+        <li className={css.vehicleItem}>
+          <p>Tank</p>
+          <p>{card.tank}</p>
+        </li>
+        <li className={css.vehicleItem}>
+          <p>Consumption</p>
+          <p>{card.consumption}</p>
+        </li>
+      </ul>
     </div>
   );
 };
