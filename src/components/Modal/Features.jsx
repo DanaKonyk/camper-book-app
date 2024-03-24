@@ -12,6 +12,7 @@ const Features = ({ card }) => {
           </svg>
           {card.adults} Adults
         </li>
+
         <li className={css.featureItem}>
           <svg className={css.transmissionIcon} width="20" height="20">
             <use href={`${sprite}#icon-transmission`} />
@@ -67,7 +68,7 @@ const Features = ({ card }) => {
             <svg className={css.hobIcon} width="20" height="20">
               <use href={`${sprite}#icon-hob`} />
             </svg>
-            {card.hob}
+            {card.hob} hob
           </li>
         )}
         {card.CD > 0 && (

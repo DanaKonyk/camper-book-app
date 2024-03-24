@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import sprite from '../../images/sprite.svg';
 import css from './Modal.module.css';
 import { createPortal } from 'react-dom';
@@ -7,6 +7,9 @@ import Form from './Form';
 import Reviews from './Reviews';
 
 const Modal = ({ onClose, advert }) => {
+  const [featuresIsShown, setFeaturesIsShown] = useState(false);
+  const [reviewsIsShown, setReviewsIsShown] = useState(false);
+
   const handleClose = () => {
     onClose();
   };
@@ -15,6 +18,16 @@ const Modal = ({ onClose, advert }) => {
     if (e.target === e.currentTarget) {
       onClose();
     }
+  };
+
+  const handleFeatures = () => {
+    setFeaturesIsShown(true);
+    setReviewsIsShown(false);
+  };
+
+  const handleReviews = () => {
+    setFeaturesIsShown(false);
+    setReviewsIsShown(true);
   };
 
   return createPortal(
@@ -61,11 +74,42 @@ const Modal = ({ onClose, advert }) => {
             <p className={css.desc}>{advert.description}</p>
           </div>
           <div className={css.additionalContent}>
-            <div className={css.nav}>
-              <Features card={advert}></Features>
-              <Reviews></Reviews>
-              <Form></Form>
-            </div>
+            <ul className={css.navList}>
+              <li className={css.navItem}>
+                <button
+                  className={`${css.navButton} ${
+                    featuresIsShown ? css.navButtonActive : ''
+                  }`}
+                  type="button"
+                  onClick={handleFeatures}
+                >
+                  Features
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`${css.navButton} ${
+                    reviewsIsShown ? css.navButtonActive : ''
+                  }`}
+                  type="button"
+                  onClick={handleReviews}
+                >
+                  Reviews
+                </button>
+              </li>
+            </ul>
+            {featuresIsShown && (
+              <div className={css.navWrap}>
+                <Features card={advert} />
+                <Form />
+              </div>
+            )}
+            {reviewsIsShown && (
+              <div className={css.navWrap}>
+                <Reviews card={advert} />
+                <Form />
+              </div>
+            )}
           </div>
         </div>
       </div>
