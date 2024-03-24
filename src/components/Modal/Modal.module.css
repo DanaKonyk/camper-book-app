@@ -308,6 +308,7 @@ hr {
     height: 114px;
     background-color: var(--input-color);
     border: none;
+    resize: none;
 }
 
 .formButton {
