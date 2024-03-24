@@ -7,7 +7,7 @@ import Form from './Form';
 import Reviews from './Reviews';
 
 const Modal = ({ onClose, advert }) => {
-  const [featuresIsShown, setFeaturesIsShown] = useState(false);
+  const [featuresIsShown, setFeaturesIsShown] = useState(true);
   const [reviewsIsShown, setReviewsIsShown] = useState(false);
 
   const handleClose = () => {

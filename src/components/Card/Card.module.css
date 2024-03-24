@@ -67,6 +67,10 @@ img {
     gap: 4px;
 }
 
+.iconStar {
+    fill: #FFC531;
+}
+
 .buttonRate {
     display: block;
     font-size: 16px;

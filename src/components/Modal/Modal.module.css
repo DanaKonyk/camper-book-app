@@ -66,6 +66,10 @@
     text-decoration: underline;
 }
 
+.iconStar {
+    fill: #FFC531;
+}
+
 .location {
     text-decoration: none;
 }
@@ -144,7 +148,6 @@
 }
 
 .featuresList {
-    /* width: 420px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -193,4 +196,132 @@ hr {
     font-weight: 500;
     line-height: 1.33;
     color: var(--main-text-color);
+}
+
+.reviewsWrap {
+    width: 50%;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ratingWrap {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.avatarWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--button-color);
+    background-color: var(--description-card-color);
+}
+
+.nameRatingWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reviewsName {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: var(--main-text-color);
+}
+
+.ratingList {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.starIcon {
+    fill: var(--description-card-color);
+
+}
+
+.starIcon.highlighted {
+    fill: #FFC531;
+}
+
+.reviewsComment {
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-color);
+
+}
+
+.form {
+    border: 1px solid rgba(16, 24, 40, 0.2);
+    border-radius: 10px;
+    padding: 24px;
+    width: 448px;
+    height: 532px;
+}
+
+.formTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.formText {
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--input-color);
+    line-height: 1.25;
+}
+
+.textarea {
+    border-radius: 10px;
+    padding: 18px 308px 76px 18px;
+    width: 400px;
+    height: 114px;
+    background-color: var(--input-color);
+    border: none;
+}
+
+.formButton {
+    border-radius: 200px;
+    background: var(--button-color);
+    padding: 16px 60px;
+    color: var(--second-color);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.08px;
+    transition: background-color var(--button-hover-color);
+}
+
+.formButton :hover,
+.formButton:focus {
+    background-color: var(--button-hover-color);
 }

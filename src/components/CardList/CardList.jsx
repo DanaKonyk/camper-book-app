@@ -18,8 +18,6 @@ const CardList = () => {
   const loading = useSelector(getIsLoading);
   const currentPage = useRef(false);
 
-  console.log(adverts);
-
   useEffect(() => {
     if (!currentPage.current) {
       currentPage.current = true;
