@@ -12,7 +12,6 @@ const Features = ({ card }) => {
           </svg>
           {card.adults} Adults
         </li>
-
         <li className={css.featureItem}>
           <svg className={css.transmissionIcon} width="20" height="20">
             <use href={`${sprite}#icon-transmission`} />

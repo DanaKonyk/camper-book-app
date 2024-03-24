@@ -6,8 +6,26 @@ const advertsSlice = createSlice({
   initialState: {
     adverts: [],
     totalAdverts: 13,
+    bookings: [],
     isLoading: false,
     error: null,
+    favorites:
+      JSON.parse(localStorage.getItem('persist:favorites'))?.favorites ?? [],
+  },
+  reducers: {
+    toggleFavorite: (state, action) => {
+      const index = state.favorites.findIndex(
+        card => card._id === action.payload._id
+      );
+      if (index === -1) {
+        state.favorites.push(action.payload);
+      } else {
+        state.favorites.splice(index, 1);
+      }
+    },
+    advertBooking: (state, action) => {
+      state.bookings.push(action.payload);
+    },
   },
   extraReducers: builder => {
     builder
@@ -26,4 +44,5 @@ const advertsSlice = createSlice({
   },
 });
 
+export const { advertBooking, toggleFavorite } = advertsSlice.actions;
 export const advertsReducer = advertsSlice.reducer;

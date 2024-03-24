@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import sprite from '../../images/sprite.svg';
 import css from './Card.module.css';
 import Modal from 'components/Modal/Modal';
+import { useDispatch, useSelector } from 'react-redux';
+import { getFavorites } from '../../redux/adverts/selectors';
+import { toggleFavorite } from '../../redux/adverts/advertsSlice';
 
 const Card = ({ card }) => {
   const [modalOpen, setModalOpen] = useState(false);
+  const favorites = useSelector(getFavorites);
+  const dispatch = useDispatch();
+
+  const isCardFavorite = useMemo(
+    () => favorites.find(favorite => favorite._id === card._id),
+    [favorites, card._id]
+  );
+
+  const addToFavorites = () => {
+    dispatch(toggleFavorite(card));
+  };
 
   const handleOpen = () => {
     setModalOpen(true);
@@ -26,8 +40,18 @@ const Card = ({ card }) => {
               <p className={css.name}>{card.name}</p>
               <div className={css.priceWrap}>
                 <p className={css.price}>€{card.price}.00</p>
-                <button className={css.buttonFav} type="button">
-                  <svg className={css.iconFav} width="24" height="24">
+                <button
+                  className={css.buttonFav}
+                  type="button"
+                  onClick={() => addToFavorites(card._id)}
+                >
+                  <svg
+                    className={`${css.iconFav} ${
+                      isCardFavorite ? css.iconFavActive : ''
+                    }`}
+                    width="24"
+                    height="24"
+                  >
                     <use href={`${sprite}#icon-fav`} />
                   </svg>
                 </button>

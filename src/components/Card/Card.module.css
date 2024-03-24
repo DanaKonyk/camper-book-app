@@ -54,6 +54,11 @@ img {
     fill: transparent;
 }
 
+.iconFavActive {
+    stroke: var(--button-color);
+    fill: var(--button-color);
+}
+
 .ratingLocationWrap {
     display: flex;
     gap: 16px;
