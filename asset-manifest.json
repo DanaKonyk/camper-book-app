@@ -1,15 +1,31 @@
 {
   "files": {
-    "main.css": "/camper-book-app/static/css/main.8ddf6a5b.css",
-    "main.js": "/camper-book-app/static/js/main.efccd316.js",
+    "main.css": "/camper-book-app/static/css/main.9249933a.css",
+    "main.js": "/camper-book-app/static/js/main.c3a88745.js",
+    "static/css/289.0c02ba60.chunk.css": "/camper-book-app/static/css/289.0c02ba60.chunk.css",
+    "static/js/289.a4d33fe6.chunk.js": "/camper-book-app/static/js/289.a4d33fe6.chunk.js",
+    "static/css/445.4b45a02c.chunk.css": "/camper-book-app/static/css/445.4b45a02c.chunk.css",
+    "static/js/445.38bcb017.chunk.js": "/camper-book-app/static/js/445.38bcb017.chunk.js",
+    "static/css/998.ffff97e3.chunk.css": "/camper-book-app/static/css/998.ffff97e3.chunk.css",
+    "static/js/998.76f998ba.chunk.js": "/camper-book-app/static/js/998.76f998ba.chunk.js",
+    "static/js/562.3001c19b.chunk.js": "/camper-book-app/static/js/562.3001c19b.chunk.js",
+    "static/js/387.dc6c5931.chunk.js": "/camper-book-app/static/js/387.dc6c5931.chunk.js",
     "static/media/background-image-min.jpeg": "/camper-book-app/static/media/background-image-min.fe9b4d02b6adf645d72f.jpeg",
     "static/media/sprite.svg": "/camper-book-app/static/media/sprite.59430af43b1af485148097a486e4d6e1.svg",
     "index.html": "/camper-book-app/index.html",
-    "main.8ddf6a5b.css.map": "/camper-book-app/static/css/main.8ddf6a5b.css.map",
-    "main.efccd316.js.map": "/camper-book-app/static/js/main.efccd316.js.map"
+    "main.9249933a.css.map": "/camper-book-app/static/css/main.9249933a.css.map",
+    "main.c3a88745.js.map": "/camper-book-app/static/js/main.c3a88745.js.map",
+    "289.0c02ba60.chunk.css.map": "/camper-book-app/static/css/289.0c02ba60.chunk.css.map",
+    "289.a4d33fe6.chunk.js.map": "/camper-book-app/static/js/289.a4d33fe6.chunk.js.map",
+    "445.4b45a02c.chunk.css.map": "/camper-book-app/static/css/445.4b45a02c.chunk.css.map",
+    "445.38bcb017.chunk.js.map": "/camper-book-app/static/js/445.38bcb017.chunk.js.map",
+    "998.ffff97e3.chunk.css.map": "/camper-book-app/static/css/998.ffff97e3.chunk.css.map",
+    "998.76f998ba.chunk.js.map": "/camper-book-app/static/js/998.76f998ba.chunk.js.map",
+    "562.3001c19b.chunk.js.map": "/camper-book-app/static/js/562.3001c19b.chunk.js.map",
+    "387.dc6c5931.chunk.js.map": "/camper-book-app/static/js/387.dc6c5931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ddf6a5b.css",
-    "static/js/main.efccd316.js"
+    "static/css/main.9249933a.css",
+    "static/js/main.c3a88745.js"
   ]
 }
